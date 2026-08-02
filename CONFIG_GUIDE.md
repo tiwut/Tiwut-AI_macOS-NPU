@@ -1,10 +1,10 @@
-# ⚙️ Tiwut-AI: Configuration, Training & Database Guide
+# Tiwut-AI: Configuration, Training & Database Guide
 
 Comprehensive guide for configuring **Tiwut-AI**, managing the **High-Speed Database Engine**, switching database backends, and fine-tuning neural network training parameters.
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 1. [Configuration Overview (`config.json`)](#-configuration-overview-configjson)
 2. [Database Switching & Configuration](#-database-switching--configuration)
@@ -20,7 +20,7 @@ Comprehensive guide for configuring **Tiwut-AI**, managing the **High-Speed Data
 
 ---
 
-## 🛠️ Configuration Overview (`config.json`)
+## Configuration Overview (`config.json`)
 
 The entire system is controlled via `config.json` in the root directory. You can inspect active settings anytime with:
 
@@ -83,7 +83,7 @@ The entire system is controlled via `config.json` in the root directory. You can
 
 ---
 
-## 🗄️ Database Switching & Configuration
+## Database Switching & Configuration
 
 Tiwut-AI uses a high-performance database layer designed for zero-latency retrieval into Apple Silicon Unified RAM.
 
@@ -141,7 +141,7 @@ To organize checkpoints or databases in another folder (e.g., external drive or 
 
 ---
 
-## 🏋️ Training Configuration & Best Practices
+## Training Configuration & Best Practices
 
 ### Training Sources
 
@@ -179,7 +179,7 @@ When you train on new documents or websites:
 
 ---
 
-## 🧠 Inference & Reasoning Settings
+## Inference & Reasoning Settings
 
 Configure the generation behavior in `config.json`:
 
@@ -203,7 +203,7 @@ Configure the generation behavior in `config.json`:
 
 ---
 
-## ⚡ macOS M4 Hardware Optimization
+## macOS M4 Hardware Optimization
 
 Tiwut-AI is engineered for Apple Silicon (M4 / M3 / M2 / M1):
 - **MPS Matrix Acceleration**: Neural forward passes and backward gradients run on Metal Performance Shaders.
