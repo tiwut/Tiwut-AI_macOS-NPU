@@ -1,0 +1,5 @@
+Tiwut-AI is a high-speed neural network AI created specifically for Apple Silicon M4 architecture.
+It operates completely from Unified RAM, allowing instantaneous vector recall and low-latency token generation.
+The neural network uses Rotary Position Embeddings (RoPE), SwiGLU feed-forward networks, and PyTorch Metal Performance Shaders (MPS).
+Users can feed Tiwut-AI website URLs and local text documents to train the model directly via the command line interface.
+Supported CLI arguments include -help, -train, -chat, -ask, -status, and -reset.
