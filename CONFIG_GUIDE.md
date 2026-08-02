@@ -1,22 +1,19 @@
-# Tiwut-AI: Configuration, Training & Database Guide
+# Tiwut-AI: Configuration & Database Guide
 
-Comprehensive guide for configuring **Tiwut-AI**, managing the **High-Speed Database Engine**, switching database backends, and fine-tuning neural network training parameters.
+Comprehensive guide for configuring **Tiwut-AI**, managing the **High-Speed Database Engine**, switching database backends, and fine-tuning neural network parameters.
 
 ---
 
 ## Table of Contents
 
-1. [Configuration Overview (`config.json`)](#-configuration-overview-configjson)
-2. [Database Switching & Configuration](#-database-switching--configuration)
-   - [File-Backed SQLite with WAL & MMAP (Default)](#1-file-backed-sqlite-with-wal--mmap-default)
-   - [Pure In-Memory Mode (`:memory:`)](#2-pure-in-memory-mode-memory)
-   - [Custom Storage Directory](#3-custom-storage-directory)
-3. [Training Configuration & Best Practices](#-training-configuration--best-practices)
-   - [Training Sources (URLs, Files, Directories)](#training-sources)
-   - [Hyperparameter Tuning](#hyperparameter-tuning)
-   - [Dynamic Tokenizer & Embedding Expansion](#dynamic-tokenizer--embedding-expansion)
-4. [Inference & Reasoning Settings](#-inference--reasoning-settings)
-5. [macOS M4 Hardware Optimization](#-macos-m4-hardware-optimization)
+1. [Configuration Overview (`config.json`)](#configuration-overview-configjson)
+2. [Database Switching & Configuration](#database-switching--configuration)
+   - [1. File-Backed SQLite with WAL & MMAP (Default)](#1-file-backed-sqlite-with-wal--mmap-default)
+   - [2. Pure In-Memory Mode (`:memory:`)](#2-pure-in-memory-mode-memory)
+   - [3. Custom Storage Directory](#3-custom-storage-directory)
+3. [Training Configuration Reference](#training-configuration-reference)
+4. [Inference & Reasoning Settings](#inference--reasoning-settings)
+5. [macOS M4 Hardware Optimization](#macos-m4-hardware-optimization)
 
 ---
 
@@ -125,57 +122,36 @@ For ephemeral sessions or maximum speed without writing database files to disk:
 
 ### 3. Custom Storage Directory
 
-To organize checkpoints or databases in another folder (e.g., external drive or project folder):
+To organize checkpoints or databases in another folder (e.g., external drive or custom path):
 
 ```json
 "storage": {
   "base_dir": "my_custom_storage",
-  "checkpoint_file": "my_custom_storage/model.pt",
+  "checkpoint_file": "my_custom_storage/neural_weights.pt",
   "tokenizer_file": "my_custom_storage/tokenizer.json",
   "meta_file": "my_custom_storage/metadata.json"
 },
 "database": {
-  "path": "my_custom_storage/brain.db"
+  "path": "my_custom_storage/neural_brain.db"
 }
 ```
 
 ---
 
-## Training Configuration & Best Practices
+## Training Configuration Reference
 
-### Training Sources
+For comprehensive training details, see [TRAINING.md](file:///Users/tiwut/Documents/dev/Tiwut-AI/TRAINING.md).
 
-You can train Tiwut-AI on web pages, local documents, or entire directories:
-
-```bash
-# 1. Scrape & train on a website URL
-./tiwut-ai -train -url https://example.com/article -epochs 10
-
-# 2. Train on a local document
-./tiwut-ai -train -file ./notes.txt -epochs 15 -lr 0.0002
-
-# 3. Recursively train on a directory of documents (.txt, .md, .csv, .py, etc.)
-./tiwut-ai -train -dir ./knowledge_folder -epochs 8
-```
-
-### Hyperparameter Tuning
-
-| Setting | Type | Recommended | Description |
+| Setting | Type | Default | Description |
 |---|---|---|---|
-| `batch_size` | `int` | `8` – `32` | Number of token sequences processed concurrently on M4 MPS. |
-| `learning_rate` | `float` | `0.0001` – `0.0005` | Base AdamW learning rate. |
-| `min_learning_rate` | `float` | `0.00001` – `0.00005` | Minimum learning rate for Cosine Annealing scheduler. |
+| `batch_size` | `int` | `16` | Number of token sequences processed concurrently on M4 MPS. |
+| `learning_rate` | `float` | `0.0003` | Base AdamW learning rate. |
+| `min_learning_rate` | `float` | `0.00003` | Minimum learning rate for Cosine Annealing scheduler. |
 | `weight_decay` | `float` | `0.01` | L2 regularization to prevent overfitting on small texts. |
 | `grad_clip` | `float` | `1.0` | Gradient clipping threshold to prevent exploding gradients. |
-| `chunk_size` | `int` | `128` – `512` | Sequence length for semantic chunking. |
-| `chunk_overlap` | `int` | `32` – `128` | Token overlap between adjacent chunks to maintain context. |
-
-### Dynamic Tokenizer & Embedding Expansion
-
-When you train on new documents or websites:
-1. The **Byte-Level Tokenizer** analyzes word frequencies and introduces new subword tokens.
-2. The **TiwutNeuralAI** model dynamically resizes its embedding and projection matrices on the M4 GPU without forgetting prior weights.
-3. Chunks are chunked, tokenized, and embedded into the **High-Speed Database** and pinned in **RAM**.
+| `default_epochs` | `int` | `10` | Default number of epochs when `-epochs` is not specified on the CLI. |
+| `chunk_size` | `int` | `256` | Sequence length for semantic chunking. |
+| `chunk_overlap` | `int` | `64` | Token overlap between adjacent chunks to maintain context. |
 
 ---
 

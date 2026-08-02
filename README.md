@@ -154,3 +154,10 @@ Inside chat mode:
 ```bash
 ./tiwut-ai -ask "What features does Apple Silicon M4 have?"
 ```
+
+---
+
+## Documentation
+
+- [Training Guide](file:///Users/tiwut/Documents/dev/Tiwut-AI/TRAINING.md) — Comprehensive training, data ingestion, pipeline stages, and hyperparameter tuning.
+- [Configuration & Database Guide](file:///Users/tiwut/Documents/dev/Tiwut-AI/CONFIG_GUIDE.md) — Detailed reference for `config.json`, database switching, and memory options.
