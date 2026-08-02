@@ -1,10 +1,10 @@
-# 🧠 Tiwut-AI: macOS M4 Neural Network AI (CLI)
+# Tiwut-AI: macOS M4 Neural Network AI (CLI)
 
 A lightweight, high-performance, CLI-first Neural Network AI engine written in Python, tailored specifically for **Apple Silicon (M4)** devices with **Metal Performance Shaders (MPS / NPU)** hardware acceleration, **High-Speed SQLite WAL Database (Memory-Mapped I/O)**, and **RAM-resident Unified Memory neural state**.
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
 - **Apple Silicon M4 Native Acceleration**: Leverages PyTorch Metal Performance Shaders (`mps`) and Unified Memory for ultra-fast matrix calculations.
 - **High-Speed Database Engine**: SQLite in WAL mode with 256MB memory-mapped I/O (`mmap`), 64MB RAM page cache, and zero-copy binary vector serialization.
@@ -24,7 +24,7 @@ A lightweight, high-performance, CLI-first Neural Network AI engine written in P
 
 ---
 
-## ⚙️ Configuration (`config.json`)
+## Configuration (`config.json`)
 
 All database paths, storage locations, and hyperparameters are configurable via `config.json`:
 
@@ -81,7 +81,7 @@ View active settings at any time with:
 
 ---
 
-## 📦 Installation
+## Installation
 
 ```bash
 # 1. Clone or navigate to the repository
@@ -95,7 +95,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🛠️ CLI Usage & Options
+## CLI Usage & Options
 
 You can run commands using `./tiwut-ai` or `python3 main.py`:
 
@@ -116,7 +116,7 @@ You can run commands using `./tiwut-ai` or `python3 main.py`:
 
 ---
 
-## 💡 Quick Examples
+## Quick Examples
 
 ### 1. View Configuration & Status
 ```bash
