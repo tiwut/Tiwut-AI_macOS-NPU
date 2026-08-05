@@ -1,0 +1,86 @@
+# Tiwut-AI Default English Knowledge & Language Understanding Base
+
+## 1. Identity, Purpose, and Capabilities
+Tiwut-AI is a lightweight, high-performance, cross-platform Neural Network AI engine written in Rust.
+Tiwut-AI Version 2 is engineered for maximum speed, memory efficiency, and cross-platform capability across macOS, Linux, and Windows.
+Tiwut-AI uses a modern Transformer architecture featuring Rotary Positional Embeddings (RoPE), Pre-RMSNorm normalization, SwiGLU feedforward activations, and multi-head causal self-attention.
+Tiwut-AI operates locally on the user's device, storing all model weights, configuration, tokenizer vocabulary, and indexed knowledge memories into a single unified model package named ai.model.
+Tiwut-AI features an interactive command-line interface (CLI), a high-speed async REST and Server-Sent Events (SSE) API server, and a modern graphical user interface (GUI) web application.
+Tiwut-AI can ingest and learn from website URLs, raw text files, markdown documents, CSV files, and entire directories dynamically without catastrophic forgetting.
+
+## 2. Core English Conversational Patterns & Assistant Guidelines
+When greeted with "hello", "hi", "hey", or "greetings", Tiwut-AI responds in a polite, helpful, and friendly English tone: "Hello! I am Tiwut-AI, your high-performance neural assistant. How can I help you today?"
+When asked "who are you" or "what is your name", Tiwut-AI states: "I am Tiwut-AI Version 2, a fast and efficient cross-platform neural network AI engine built in Rust."
+When asked about capabilities or help, Tiwut-AI explains how users can chat, ask questions, train new knowledge from URLs or local files, view system status, and run the API server.
+Tiwut-AI answers user questions clearly, accurately, and concisely based on its neural knowledge base and indexed memory.
+
+## 3. Computer Science, Hardware, and Architecture
+Apple Silicon refers to the system-on-a-chip (SoC) processors designed by Apple Inc. using the ARM64 architecture, including the M1, M2, M3, and M4 series.
+Apple Silicon chips integrate the Central Processing Unit (CPU), Graphics Processing Unit (GPU), Neural Engine (NPU), and unified memory (RAM) onto a single silicon die.
+Unified Memory Architecture (UMA) allows the CPU, GPU, and Neural Engine to access the same high-bandwidth memory pool without copying data across separate buses.
+The Neural Processing Unit (NPU), known as the Apple Neural Engine, is specialized hardware designed for accelerating deep learning matrix multiplication and tensor operations with high energy efficiency.
+Rust is a modern systems programming language that guarantees memory safety, thread safety, and high performance without requiring a garbage collector.
+Rayon is a data-parallelism library for Rust that enables multi-threaded tensor calculations, parallel matrix multiplication, and SIMD hardware acceleration.
+
+## 4. Artificial Intelligence and Machine Learning Concepts
+A Transformer is a deep learning neural network architecture introduced in 2017 that relies on self-attention mechanisms to model relationships between tokens in a sequence.
+Self-Attention allows every token in an input sequence to dynamically compute relevance scores and attend to every other token, capturing long-range contextual dependencies.
+Rotary Positional Embedding (RoPE) encodes relative positional information into query and key representations by rotating them in the complex plane.
+Root Mean Square Normalization (RMSNorm) is a computationally efficient normalization technique that normalizes activations based on their root mean square rather than calculating both mean and variance.
+SwiGLU (Swish Gated Linear Unit) is an activation function that combines the Swish (SiLU) non-linearity with a gating mechanism to improve representation capacity in transformer feed-forward networks.
+Vector Embeddings are dense numerical representations of text, concepts, or tokens in high-dimensional continuous latent space where semantic similarity corresponds to geometric distance.
+Cosine Similarity measures the cosine of the angle between two multi-dimensional vectors, evaluating how closely their semantic meanings align regardless of vector magnitude.
+Retrieval-Augmented Generation (RAG) is a technique where relevant external knowledge chunks are retrieved from a vector memory bank and provided to the language model to ground responses with accurate facts.
+AdamW is an optimization algorithm that decouples weight decay regularization from gradient updates, improving generalization during neural network training.
+
+## 5. Operating Systems and File Systems
+An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs.
+Major desktop operating systems include macOS, Linux, and Microsoft Windows.
+APFS (Apple File System) is the default file system for macOS, iOS, and iPadOS, optimized for solid-state storage and featuring fast cloning, snapshots, and strong encryption.
+Ext4 (Fourth Extended File System) is a widely used journaling file system for Linux distributions offering high reliability, large file support, and extents.
+NTFS (New Technology File System) is the proprietary file system developed by Microsoft for Windows NT and later operating systems, supporting access control lists and journaling.
+ZFS is an advanced combined file system and logical volume manager known for data integrity verification, copy-on-write snapshots, and pooled storage capabilities.
+
+## 6. Web Standards, APIs, and Networking
+HTTP (Hypertext Transfer Protocol) is an application-layer protocol for transmitting hypermedia documents across the World Wide Web.
+REST (Representational State Transfer) is an architectural style for designing networked applications using stateless operations over HTTP verbs such as GET, POST, PUT, and DELETE.
+Server-Sent Events (SSE) is a server-push technology enabling a client to receive automatic, real-time updates and streaming text tokens from a server over an HTTP connection.
+JSON (JavaScript Object Notation) is a lightweight, human-readable data interchange format widely used for APIs, configuration files, and structured storage.
+CORS (Cross-Origin Resource Sharing) is a browser security mechanism that allows or restricts web resources from being requested from a different domain or port.
+
+## 7. English Language Essentials, Common Questions and Answers
+Question: What is Tiwut-AI?
+Answer: Tiwut-AI is a high-performance cross-platform neural network AI engine built in Rust, featuring an interactive CLI, REST/SSE API, unified ai.model storage, and a modern GUI.
+
+Question: How do I train Tiwut-AI?
+Answer: You can train Tiwut-AI using the CLI command 'tiwut-ai train -url <URL>' for web pages, 'tiwut-ai train -file <path>' for text documents, or through the web GUI Training Dashboard.
+
+Question: What is stored in ai.model?
+Answer: The ai.model package stores all neural network weights, tokenizer vocabulary, configuration parameters, indexed knowledge chunks, and training metadata in a single unified container.
+
+Question: What is Rust?
+Answer: Rust is a high-performance systems programming language focused on safety, concurrency, and zero-cost abstractions, making Tiwut-AI fast and memory-efficient.
+
+Question: What is a Tensor?
+Answer: A tensor is a multi-dimensional array of numerical values used to represent data, neural network weights, and activations in deep learning computations.
+
+Question: What is an NPU?
+Answer: An NPU (Neural Processing Unit), such as the Apple Neural Engine, is a specialized hardware accelerator engineered for fast matrix multiplication and deep learning operations with high energy efficiency.
+
+Question: What is Apple Silicon?
+Answer: Apple Silicon is Apple's family of System-on-Chip (SoC) processors featuring unified memory, multi-core CPUs, high-throughput GPUs, and dedicated Neural Engines (NPUs).
+
+Question: What is Rayon?
+Answer: Rayon is a data-parallelism library for Rust that enables multi-threaded tensor calculations, parallel matrix multiplication, and SIMD acceleration across all CPU cores.
+
+Question: What is RMSNorm?
+Answer: Root Mean Square Normalization (RMSNorm) is a computationally efficient normalization technique that regulates activations based on their root mean square without subtracting the mean.
+
+Question: What is RoPE?
+Answer: Rotary Positional Embedding (RoPE) encodes relative positional information into query and key representations by rotating them in the complex plane.
+
+Question: What is SwiGLU?
+Answer: SwiGLU (Swish Gated Linear Unit) is an activation function that combines the Swish (SiLU) non-linearity with a gating mechanism to improve representation capacity in transformer feed-forward networks.
+
+Question: How does RAG work in Tiwut-AI?
+Answer: When a query is received, Tiwut-AI encodes it into a semantic vector, searches its in-RAM memory bank for the most relevant knowledge chunks using cosine similarity, and synthesizes an intelligent answer.

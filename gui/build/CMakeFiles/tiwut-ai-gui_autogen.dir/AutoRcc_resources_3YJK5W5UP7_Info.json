@@ -1,0 +1,25 @@
+{
+	"BUILD_DIR" : "/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui/build/tiwut-ai-gui_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui",
+	"CMAKE_SOURCE_DIR" : "/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui/build/tiwut-ai-gui_autogen/include",
+	"INPUTS" : 
+	[
+		"/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui/resources/theme.qss"
+	],
+	"LOCK_FILE" : "/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui/build/CMakeFiles/tiwut-ai-gui_autogen.dir/AutoRcc_resources_3YJK5W5UP7_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "3YJK5W5UP7",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "/opt/homebrew/share/qt/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui/build/CMakeFiles/tiwut-ai-gui_autogen.dir/AutoRcc_resources_3YJK5W5UP7_Used.txt",
+	"SOURCE" : "/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui/resources/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

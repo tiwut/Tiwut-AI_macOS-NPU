@@ -1,0 +1,1 @@
+cargo:rustc-env=MIME_TYPES_GENERATED_PATH=/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/target/release/build/mime_guess-cf33b2328d4ae2f6/out/mime_types_generated.rs

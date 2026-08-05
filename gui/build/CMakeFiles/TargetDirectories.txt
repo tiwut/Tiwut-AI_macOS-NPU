@@ -1,0 +1,5 @@
+/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui/build/CMakeFiles/tiwut-ai-gui.dir
+/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui/build/CMakeFiles/edit_cache.dir
+/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui/build/CMakeFiles/rebuild_cache.dir
+/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui/build/CMakeFiles/tiwut-ai-gui_autogen_timestamp_deps.dir
+/Users/tiwut/Documents/GitHub/Tiwut-AI_macOS-NPU/version_2/gui/build/CMakeFiles/tiwut-ai-gui_autogen.dir
